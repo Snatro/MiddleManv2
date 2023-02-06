@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.middle_man.PersonController">
+   <children>
+       <fx:include source="menubar-view.fxml"/>
+      <TableView fx:id="personTableView" layoutX="119.0" layoutY="112.0" prefHeight="288.0" prefWidth="308.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="30.39996337890625" text="#" />
+          <TableColumn fx:id="tableColumnName" prefWidth="211.199951171875" text="Name" />
+            <TableColumn fx:id="tableColumnRole" prefWidth="65.60003662109375" text="Role" />
+        </columns>
+      </TableView>
+      <Label layoutX="240.0" layoutY="71.0" prefHeight="26.0" prefWidth="65.0" text="Persons">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="484.0" layoutY="175.0" mnemonicParsing="false" onAction="#deleteEntityButton" prefHeight="26.0" prefWidth="66.0" text="Delete" />
+      <Button layoutX="484.0" layoutY="243.0" mnemonicParsing="false" onAction="#editEntityButton" prefHeight="26.0" prefWidth="66.0" text="Edit" />
+   </children>
+</AnchorPane>

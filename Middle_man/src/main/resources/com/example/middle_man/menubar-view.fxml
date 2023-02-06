@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:id="menu" prefHeight="26.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.middle_man.MenuBarController">
+  <menus>
+    <Menu fx:id="store" mnemonicParsing="false" text="Store">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#storeListButton" text="Stores" />
+            <MenuItem fx:id="addStoreMenuItem" mnemonicParsing="false" onAction="#addStoreButton" text="Add store" />
+      </items>
+    </Menu>
+    <Menu fx:id="supply" mnemonicParsing="false" text="Supply">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#supplyListButton" text="Supplies" />
+            <MenuItem mnemonicParsing="false" onAction="#categoryListButton" text="Categories" />
+            <MenuItem mnemonicParsing="false" onAction="#addSupplyButton" text="Add supply" />
+            <MenuItem mnemonicParsing="false" onAction="#addCategoryButton" text="Add category" />
+      </items>
+    </Menu>
+    <Menu fx:id="person" mnemonicParsing="false" text="Person">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#personListButton" text="Persons" />
+            <MenuItem mnemonicParsing="false" onAction="#addPersonButton" text="Add persons" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>
